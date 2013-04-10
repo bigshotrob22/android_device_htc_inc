@@ -1,22 +1,18 @@
 # Specify phone tech before including full_phone
-#$(call inherit-product, vendor/cm/config/cdma.mk)
+#$(call inherit-product, vendor/carbon/config/common_cdma.mk)
 
-# Inherit some common CM stuff, but the smaller version
-$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
+# Inherit some common Carbon stuff, but the smaller version
+$(call inherit-product, vendor/carbon/config/common_mini_phone.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := inc
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 800
-TARGET_SCREEN_WIDTH := 480
 
 # Inherit device configuration
 $(call inherit-product, device/htc/inc/full_inc.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := inc
-PRODUCT_NAME := cm_inc
+PRODUCT_NAME := carbon_inc
 PRODUCT_BRAND := verizon_wwe
 PRODUCT_MODEL := ADR6300
 PRODUCT_MANUFACTURER := HTC
